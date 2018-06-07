@@ -1,11 +1,13 @@
 version: 2
+
+# define jobs for the build 
 jobs: 
-    build: 
-        docker
-          - image: python:3.5
-        working_directoruy: /code
-        steps: 
-            - checkout 
-            - run: 
-                name: Helo world 
-                command: echo "Hello there!"
+  build: 
+    docker: 
+      - image: python:3.5
+    working_directoruy: /code
+      steps: 
+        - checkout 
+        - run: 
+            name: Helo world 
+            command: echo "Hello there!"
