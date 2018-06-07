@@ -6,8 +6,8 @@ jobs:
     docker: 
       - image: python:3.5
     working_directoruy: /code
-      steps: 
-        - checkout 
-        - run: 
-            name: Helo world 
-            command: echo "Hello there!"
+    steps: 
+      - checkout 
+      - run: 
+          name: Helo world 
+          command: echo "Hello there!"
